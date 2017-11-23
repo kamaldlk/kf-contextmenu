@@ -45,11 +45,11 @@ var MenuItem = _react2.default.createClass({
         };
     },
     handleClick: function handleClick(event) {
-        var _props = this.props;
-        var disabled = _props.disabled;
-        var onClick = _props.onClick;
-        var data = _props.data;
-        var preventClose = _props.preventClose;
+        var _props = this.props,
+            disabled = _props.disabled,
+            onClick = _props.onClick,
+            data = _props.data,
+            preventClose = _props.preventClose;
 
 
         event.preventDefault();
@@ -67,14 +67,14 @@ var MenuItem = _react2.default.createClass({
         _monitor2.default.hideMenu();
     },
     render: function render() {
-        var _props2 = this.props;
-        var disabled = _props2.disabled;
-        var children = _props2.children;
-        var _props2$attributes = _props2.attributes;
-        var _props2$attributes$cl = _props2$attributes.className;
-        var className = _props2$attributes$cl === undefined ? "" : _props2$attributes$cl;
-        var props = _objectWithoutProperties(_props2$attributes, ["className"]);
-        var menuItemClassNames = "react-context-menu-item " + className;
+        var _props2 = this.props,
+            disabled = _props2.disabled,
+            children = _props2.children,
+            _props2$attributes = _props2.attributes,
+            _props2$attributes$cl = _props2$attributes.className,
+            className = _props2$attributes$cl === undefined ? "" : _props2$attributes$cl,
+            props = _objectWithoutProperties(_props2$attributes, ["className"]),
+            menuItemClassNames = "react-context-menu-item " + className;
 
         var classes = (0, _classnames2.default)({
             "react-context-menu-link": true,

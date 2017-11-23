@@ -15,11 +15,9 @@ exports.default = {
         return _store2.default.getState().currentItem;
     },
     getPosition: function getPosition() {
-        var _store$getState = _store2.default.getState();
-
-        var x = _store$getState.x;
-        var y = _store$getState.y;
-
+        var _store$getState = _store2.default.getState(),
+            x = _store$getState.x,
+            y = _store$getState.y;
 
         return { x: x, y: y };
     },

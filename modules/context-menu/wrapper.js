@@ -57,16 +57,17 @@ var ContextMenuWrapper = _react2.default.createClass({
         return this.props.isVisible !== nextProps.visible;
     },
     getMenuPosition: function getMenuPosition(x, y) {
-        var scrollX = document.documentElement.scrollTop;
-        var scrollY = document.documentElement.scrollLeft;
-        var _window = window;
-        var innerWidth = _window.innerWidth;
-        var innerHeight = _window.innerHeight;
-        var rect = this.menu.getBoundingClientRect();
-        var menuStyles = {
+        var scrollX = document.documentElement.scrollTop,
+            scrollY = document.documentElement.scrollLeft,
+            _window = window,
+            innerWidth = _window.innerWidth,
+            innerHeight = _window.innerHeight,
+            rect = this.menu.getBoundingClientRect(),
+            menuStyles = {
             top: y + scrollY,
             left: x + scrollX
         };
+
 
         if (y + rect.height > innerHeight) {
             menuStyles.top -= rect.height;
@@ -81,10 +82,10 @@ var ContextMenuWrapper = _react2.default.createClass({
     render: function render() {
         var _this2 = this;
 
-        var _props = this.props;
-        var isVisible = _props.isVisible;
-        var identifier = _props.identifier;
-        var children = _props.children;
+        var _props = this.props,
+            isVisible = _props.isVisible,
+            identifier = _props.identifier,
+            children = _props.children;
 
 
         var style = _extends({}, menuStyles, this.state);

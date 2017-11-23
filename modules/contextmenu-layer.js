@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 exports.default = function (identifier, configure) {
     return function (Component) {
@@ -81,16 +81,13 @@ exports.default = function (identifier, configure) {
                 });
             },
             render: function render() {
-                var _props = this.props;
-                var _props$attributes = _props.attributes;
-                var _props$attributes$cla = _props$attributes.className;
-                var className = _props$attributes$cla === undefined ? "" : _props$attributes$cla;
-
-                var attributes = _objectWithoutProperties(_props$attributes, ["className"]);
-
-                var renderTag = _props.renderTag;
-
-                var props = _objectWithoutProperties(_props, ["attributes", "renderTag"]);
+                var _props = this.props,
+                    _props$attributes = _props.attributes,
+                    _props$attributes$cla = _props$attributes.className,
+                    className = _props$attributes$cla === undefined ? "" : _props$attributes$cla,
+                    attributes = _objectWithoutProperties(_props$attributes, ["className"]),
+                    renderTag = _props.renderTag,
+                    props = _objectWithoutProperties(_props, ["attributes", "renderTag"]);
 
                 attributes.className = "react-context-menu-wrapper " + className;
                 attributes.onContextMenu = this.handleContextClick;

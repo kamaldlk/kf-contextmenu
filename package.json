@@ -1,5 +1,5 @@
 {
-  "name": "react-contextmenu",
+  "name": "kf-contextmenu",
   "version": "1.5.0",
   "description": "Context Menu implemented in React",
   "main": "modules/index.js",
@@ -23,22 +23,22 @@
     "watch": "./node_modules/.bin/webpack --config examples.config.js --progress --profile --colors --watch",
     "prepublish": "npm run build"
   },
-  "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
+  "author": "Kamal K",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vkbansal/react-contextmenu.git"
+    "url": "https://github.com/kamaldlk/kf-contextmenu.git"
   },
   "bugs": {
-    "url": "https://github.com/vkbansal/react-contextmenu/issues"
+    "url": "https://github.com/kamaldlk/kf-contextmenu/issues"
   },
-  "homepage": "https://github.com/vkbansal/react-contextmenu",
+  "homepage": "https://github.com/kamaldlk/kf-contextmenu",
   "dependencies": {
     "classnames": "^2.2.3",
     "invariant": "^2.2.1",
     "lodash.isobject": "^3.0.2",
     "object-assign": "^4.0.1",
-    "react-overlays": "^0.6.3",
+    "react-overlays": "0.7.3",
     "redux": "^3.4.0"
   },
   "peerDependencies": {

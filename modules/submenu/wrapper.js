@@ -43,11 +43,12 @@ var SubMenuWrapper = _react2.default.createClass({
         return this.props.visible !== nextProps.visible;
     },
     getMenuPosition: function getMenuPosition() {
-        var _window = window;
-        var innerWidth = _window.innerWidth;
-        var innerHeight = _window.innerHeight;
-        var rect = this.menu.getBoundingClientRect();
-        var position = {};
+        var _window = window,
+            innerWidth = _window.innerWidth,
+            innerHeight = _window.innerHeight,
+            rect = this.menu.getBoundingClientRect(),
+            position = {};
+
 
         if (rect.bottom > innerHeight) {
             position.bottom = true;
@@ -64,8 +65,8 @@ var SubMenuWrapper = _react2.default.createClass({
         return { position: position };
     },
     getPositionStyles: function getPositionStyles() {
-        var style = {};
-        var position = this.state.position;
+        var style = {},
+            position = this.state.position;
 
 
         if (position.top) style.top = 0;
@@ -78,9 +79,9 @@ var SubMenuWrapper = _react2.default.createClass({
     render: function render() {
         var _this2 = this;
 
-        var _props = this.props;
-        var children = _props.children;
-        var visible = _props.visible;
+        var _props = this.props,
+            children = _props.children,
+            visible = _props.visible;
 
 
         var style = _extends({

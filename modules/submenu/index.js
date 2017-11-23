@@ -76,11 +76,11 @@ var SubMenu = _react2.default.createClass({
     render: function render() {
         var _this3 = this;
 
-        var _props = this.props;
-        var disabled = _props.disabled;
-        var children = _props.children;
-        var title = _props.title;
-        var visible = this.state.visible;
+        var _props = this.props,
+            disabled = _props.disabled,
+            children = _props.children,
+            title = _props.title,
+            visible = this.state.visible;
 
 
         var classes = (0, _classnames2.default)({
